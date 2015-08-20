@@ -1,0 +1,17 @@
+﻿<link rel="stylesheet" type="text/css" href="css/problems.css"/>
+<h2 style="text-align:center">Problem {{ currentProblem }}</h2>
+<div>
+    <div class="description"> Description:
+        {{ description }} 
+        <p>Answer: {{ answer }}</p>
+    </div>
+    
+    <div class="code-container">
+        <div class="code-btn" ng-click="toggleCode()">Show Code</div>
+        <div class="code" id="code"><p> {{code}}</p></div>
+    </div>
+    
+    <div class="next-btn"><a href="#/problems/{{nextProblem}}">Next Problem</a></div>
+    <div class="back-btn"><a href="#/problems/{{prevProblem}}">Previous Problem</a></div>
+    <div class="home-btn"><a href="#/">Go to Home</a></div>
+</div>
